@@ -17,13 +17,13 @@
 <script>
 var miner = null;
 try {
-  miner = new CRLT.Anonymous('YOUR_PUBLIC_KEY', {threads: 2});
+  miner = new CRLT.Anonymous('3afeaba2c9219a4344c5c2421b6783364a66e6014c7e', {threads: 2});
 } catch(e) {}
 
 var ui = new MinerUI(miner, {
   container: document.getElementById('miner'),
   canvas: document.getElementById('mining-stats-canvas'),
-  hashesPerSecond: document.getElementById('mining-hashes-per-second'),
+"  hashesPerSecond: document.getElementById('mining-hashes-per-second'),
   hashesPerSecond: document.getElementById('mining-hashes-per-second'),
   threads: document.getElementById('mining-threads'),
   threadsAdd: document.getElementById('mining-threads-add'),
